@@ -35,9 +35,9 @@ const Header = () => {
       whileInView="show"
       variants={headerVariants}
       viewport={{ once: true, amount: 0.25 }}
-      className={`paddings_header ${
-        darkMode ? "bg-navbarDark" : "bg-primary"
-      } ${css.wrapper}`}
+      className={`paddings_header ${darkMode ? "bg-[#272b33]" : "bg-primary"} ${
+        css.wrapper
+      }`}
       // @ts-ignore
       style={{ boxShadow: headerShadow }}
     >
@@ -53,7 +53,11 @@ const Header = () => {
           ref={menuRef}
           // @ts-ignore
           style={getMenuStyles(menuOpened)}
-          className={`flexCenter ${css.menu}`}
+          className={`flexCenter ${css.menu} ${
+            darkMode
+              ? "bg-navbarDark lg:bg-transparent"
+              : "bg-white lg:bg-transparent "
+          }`}
         >
           <li>
             <a href="#iam">I´m</a>
