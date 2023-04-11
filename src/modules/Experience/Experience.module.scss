@@ -4,7 +4,7 @@
   background: white;
 
   .container{
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     flex-wrap: wrap;
 
@@ -18,7 +18,6 @@
       }
       display: flex;
       flex-direction: column;
-      margin-top: 50px;
       gap: 2rem;
 
       .exp{
