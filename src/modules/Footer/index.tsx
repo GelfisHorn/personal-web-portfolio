@@ -4,6 +4,7 @@ import { fadeIn, footerVariants, staggerChildren } from "../../utils/motion";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
+import useContextProvider from "../../hooks/useAppContext";
 
 interface FooterColumn {
   title: string;
@@ -11,17 +12,18 @@ interface FooterColumn {
 }
 
 const Footer = () => {
+  const { darkMode } = useContextProvider();
   return (
     <motion.section
       variants={staggerChildren}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${css.wrapper}`}
+      className={`${css.wrapper} ${darkMode ? "bg-darkMode" : "bg-white"}`}
     >
       <a className="anchor" id="footer"></a>
       <motion.div variants={footerVariants} className={``}>
-        <div className="bg-primary lazy-load-4">
+        <div className=" lazy-load-4">
           <div className="flex flex-col items-start gap-16 py-16 px-16 xl:px-0 max-w-6xl w-full mx-auto">
             <div className="grid md:grid-cols-2 gap-y-10 md:gap-y-0 w-full">
               <FooterColumn title={"Redes sociales"}>
@@ -102,7 +104,7 @@ const Footer = () => {
               </FooterColumn>
             </div>
           </div>
-          <div className="bg-primary text-center border-t border-neutral-200 py-3">
+          <div className=" text-center border-t border-neutral-200 py-3">
             <div className="text-sm">©Helphis Tech 2023</div>
           </div>
         </div>

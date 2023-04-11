@@ -5,10 +5,11 @@ import "./sass/global.scss";
 import App from "./App";
 import "./index.css";
 // Context
-import { AppContextProvider } from './context/AppContextProvider';
+import { AppContextProvider } from "./context/AppContextProvider";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
+    {/* @ts-ignore */}
     <AppContextProvider>
       <App />
     </AppContextProvider>

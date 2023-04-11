@@ -4,8 +4,12 @@ import { WhatDoIHelp, projectExperience } from "../../utils/data";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
 import { BsFillCheckCircleFill, BsFillPersonCheckFill } from "react-icons/bs";
+// context
+import useContextProvider from "../../hooks/useAppContext";
 
 const Experience = () => {
+  const { darkMode } = useContextProvider();
+
   return (
     <motion.section
       // @ts-ignore
@@ -13,7 +17,9 @@ const Experience = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`paddings ${css.wrapper}`}
+      className={`paddings ${css.wrapper} ${
+        darkMode ? "bg-darkMode" : "bg-white"
+      }`}
     >
       <a className="anchor" id="services"></a>
       <div
