@@ -8,21 +8,21 @@ import { slideIn, staggerContainer } from "../../utils/motion";
 import { fadeIn } from "../../utils/motion";
 
 const Hero = () => {
-  const [imageSrc, setImageSrc] = useState(helphis);
+  // const [imageSrc, setImageSrc] = useState(helphis);
 
-  const handleMouseOver = () => {
-    setImageSrc(helphisHappy);
-  };
+  // const handleMouseOver = () => {
+  //   setImageSrc(helphisHappy);
+  // };
 
-  const handleMouseOut = () => {
-    setImageSrc(helphis);
-  };
+  // const handleMouseOut = () => {
+  //   setImageSrc(helphis);
+  // };
 
   return (
     <section
       className={`paddings ${css.wrapper}`}
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
+      // onMouseOver={handleMouseOver}
+      // onMouseOut={handleMouseOut}
     >
       <motion.div
         // @ts-ignore
@@ -57,11 +57,15 @@ const Hero = () => {
         >
           <motion.img
             variants={slideIn("up", "tween", 0.5, 1.3)}
-            src={imageSrc}
+            src={helphisHappy}
             alt="i'm"
-            className={`${css.image} ${
-              imageSrc == helphisHappy ? "hovered" : ""
-            }`}
+            className={`${css.bottom} ${css.image}`}
+          />
+          <motion.img
+            variants={slideIn("up", "tween", 0.5, 1.3)}
+            src={helphis}
+            alt="i'm"
+            className={`${css.top} ${css.image}`}
           />
         </motion.div>
 

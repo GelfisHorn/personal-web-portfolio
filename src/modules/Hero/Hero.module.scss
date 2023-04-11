@@ -2,6 +2,15 @@
 
 .wrapper {
   overflow: hidden;
+  .bottom{
+    opacity: 0;
+  }
+  &:hover .top{
+    opacity: 0;
+  }
+  &:hover .bottom{
+    opacity: 1;
+  }
 
   .container{
     position: relative;
@@ -32,11 +41,28 @@
 
       img {
         margin-bottom: -5px;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
         
         @media (max-width: $sm) {
           width: 23rem;
         }
       }
+      
+      // .bottom{
+      //   opacity: 0;
+      // }
+      // .bottom:hover{
+      //   opacity: 1;
+      // }
+      // .top{
+      //   opacity: 1;
+      // }
+      // .top:hover{
+      //   opacity: 0;
+      // }
 
       @media (max-width: $sm), (max-width: $md) {
         position: relative;
@@ -48,6 +74,21 @@
         background-position: bottom;
       }
     }
+    // .person .bottom {
+    //   opacity: 1;
+    // }
+    // .bottom{
+    //   opacity: 0;
+    // }
+    // .bottom:hover{
+    //   opacity: 1;
+    // }
+    // .person .top{
+    //   opacity: 0;
+    // }
+    // .top:hover{
+    //   opacity: 0;
+    // }
 
     .email{
       position: absolute;
