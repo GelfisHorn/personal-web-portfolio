@@ -12,7 +12,7 @@ import mongo from "../../assets/img/technologies/mongodb.png";
 import mysql from "../../assets/img/technologies/mysql.png";
 import nodejs from "../../assets/img/technologies/nodejs.png";
 import socketIo from "../../assets/img/technologies/socketIo.png";
-import sass from "../../assets/svg/sass.svg";
+import sass from "../../assets/img/technologies/sass.png";
 import solidity from "../../assets/img/technologies/solidity.png";
 import illustrator from "../../assets/img/technologies/Illustrator.png";
 import photoShop from "../../assets/img/technologies/PhotoShop.png";
@@ -71,7 +71,7 @@ const Skills = () => {
               <img src={solidity} alt="" />
             </div>
             <div className="imageSlider flexCenter">
-              <img style={{ width: "90px" }} src={illustrator} alt="" />
+              <img src={illustrator} alt="" />
             </div>
             <div className="imageSlider flexCenter">
               <img src={photoShop} alt="" />
