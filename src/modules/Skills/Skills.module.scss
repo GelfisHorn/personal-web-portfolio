@@ -2,6 +2,9 @@
 
 .wrapper {
   .container{
+    @media(min-width: $md){
+      padding: 4rem;
+    }
     .heading{
       flex-direction: column;
       
@@ -10,7 +13,7 @@
       }
     }
     .cards{
-        
+        padding-bottom: 2rem;
       .slider :global{
         .slick-list {
           margin: 0 -7px;
