@@ -19,7 +19,7 @@ const Projects = () => {
             {portfolioExp.map((client, i) => (
               <motion.div
                 variants={fadeIn("right", "tween", (i + 1) * 0.2, 1)}
-                className={css.card}
+                className={`${css.card} shadow-md`}
                 key={i}
               >
                 <div className={css.content}>
