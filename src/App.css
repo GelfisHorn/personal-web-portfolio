@@ -1,0 +1,38 @@
+.app__header-navbar {
+  width: 100vw;
+  min-height: 70vh;
+  height: 100%;
+  background-image: url(./assets/svg/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aqui {
+    margin-top: 250vw;
+    color: aliceblue;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Eudoxus Sans", sans-serif;
+}
+
+/* Cambiar el ancho y el color de fondo de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f8f7f1;
+}
+
+/* Cambiar el estilo del pulgar de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #f8c134b7;
+  border-radius: 10px;
+  border: 3px solid #F8C034;
+}
+
+/* Cambiar el estilo de la pista de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #f8f7f1;
+  border-radius: 10px;
+}

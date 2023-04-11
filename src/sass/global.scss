@@ -1,0 +1,194 @@
+@import './constants.scss';
+
+.bg-primary {
+  background: #F8F7F1;
+  // background: #fff;
+}
+
+.innerWidth {
+  @media (min-width: $xxl) {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  width: 100%;
+}
+
+.paddings {
+  @media (min-width: $sm) {
+    padding: 4rem;
+  }
+
+  @media (min-width: $xl),
+  (min-width: $md) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.paddings_header{
+  @media (min-width: $sm) {
+    padding: 1rem 4rem;
+  }
+
+  @media (min-width: $xl),
+  (min-width: $md) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  padding: 1rem 1rem;
+}
+
+.xPaddings {
+  @media (min-width: $sm) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  padding-left: 1.5rem;
+  /* 24px */
+  padding-right: 1.5rem;
+  /* 24px */
+}
+
+.yPaddings {
+  @media (min-width: $sm) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.topPaddings {
+  @media (min-width : $sm) {
+    padding-top: 4rem;
+  }
+
+  @media (min-width: $xl) {
+    padding-top: 2rem;
+  }
+
+  padding-top: 3rem;
+}
+
+
+.bottomPaddings {
+  @media (min-width : $sm) {
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: $xl) {
+    padding-bottom: 2rem;
+  }
+
+  padding-bottom: 3rem;
+}
+
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexStart {
+  display: flex;
+  justify-content: flex start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-items: end;
+}
+
+.primaryText {
+  @media (max-width: $sm) {
+    font-size: 2.5rem;
+  }
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.secondaryText {
+  @media (max-width: $sm) {
+    font-size: 1.1rem;
+    line-height: 40px;
+  }
+  line-height: 50px;
+  font-size: 1.3rem;
+  font-weight: 500
+}
+
+.primaryButton{
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: #F8C034;
+  border: none;
+  border-radius: 23px;
+  
+  &:hover {
+    background-color: lighten(#F8C034, 5%);
+  }
+  
+  &:focus {
+    outline: 1px dashed #F8C034;
+    outline-offset: 3px;
+  }
+}
+.secondaryButton {
+    cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #2BABE3;
+  border: none;
+  border-radius: 23px;
+  
+  &:hover {
+    background-color: lighten(#2BABE3, 5%);
+  }
+  
+  &:focus {
+    outline: 1px dashed #2BABE3;
+    outline-offset: 3px;
+  }
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.imageSlider {
+  width: 20px;
+
+  img {
+    width: 170PX;
+    margin: auto;
+  }
+}
