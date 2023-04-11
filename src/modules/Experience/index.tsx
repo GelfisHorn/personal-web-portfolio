@@ -48,12 +48,12 @@ const Experience = () => {
 
           <div className={`flexCenter ${css.stats}`}>
             <div className={`flexCenter ${css.stat}`}>
-              <BsFillCheckCircleFill size={50} />
+              <BsFillCheckCircleFill size={40} />
               {/* <span className="primaryText">52+</span> */}
               <span className="secondaryText">Projects Completed</span>
             </div>
             <div className={`flexCenter ${css.stat}`}>
-              <BsFillPersonCheckFill size={50} />
+              <BsFillPersonCheckFill size={40} />
               {/* <span className="primaryText">20+</span> */}
               <span className="secondaryText">Happy Clients</span>
             </div>

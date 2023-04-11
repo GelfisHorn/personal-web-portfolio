@@ -19,7 +19,11 @@ const Hero = () => {
   };
 
   return (
-    <section className={`paddings ${css.wrapper}`}>
+    <section
+      className={`paddings ${css.wrapper}`}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+    >
       <motion.div
         // @ts-ignore
         variants={staggerContainer}
@@ -58,8 +62,6 @@ const Hero = () => {
             className={`${css.image} ${
               imageSrc == helphisHappy ? "hovered" : ""
             }`}
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
           />
         </motion.div>
 
