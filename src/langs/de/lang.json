@@ -6,32 +6,33 @@
         "projects": "Projekte",
         "contactme": "Kontaktiere mich"
     },
-    "im-section": {
-        "title": "Hallo, ich bin Gelfis.",
+    "hero": {
+        "title1": "Hallo,",
+        "title2": "Ich bin Gelfis Horn.",
         "email": "helphis.tech@gmail.com",
-        "years-experience-number": "2",
-        "years-experience-text": "Langjährige Erfahrung",
-        "side-text": "Erstellen Sie die Anwendung, die Sie sich vorstellen können, schön und einfach zu bedienen"
+        "years": "2",
+        "yearstext1": "Langjährige",
+        "yearstext2": "Erfahrung",
+        "sidetext": "und würde mich über eine Videokonferenz freuen, um uns kennenzulernen und über Ihre Webentwicklungsprojekte zu sprechen. Kontaktieren Sie mich gerne, um eine Besprechung zu vereinbaren. Danke und bis bald!",
+        "button": "Kontakt"
     },
-    "services-section": {
+    "experience": {
         "title": "Über mich",
-        "span-1": "Ich helfe Ihnen, eine Lösung zu finden und Ihr Problem zu lösen. Wir verwenden Prozessdesign, um digitale Produkte zu erstellen. Außerdem helfen sie auch ihrem Geschäft.",
-        "span-2": "Wir verstehen die Bedürfnisse, die Sie für das Wachstum Ihres Unternehmens benötigen, und wir entwickeln ein Produkt in Bezug auf Ihre Bedürfnisse.",
-        "icon-1": "Projekte abgeschlossen",
-        "icon-2": "Glückliche Kunden"
+        "span1": "Erfahrener Full-Stack-Webentwickler, der sich leidenschaftlich für Technologie und Softwareentwicklung begeistert Kompetent in der Erstellung von responsiven Websites mit einer großartigen Benutzererfahrung unter Verwendung beliebter Technologien und Webentwicklungstools",
+        "span2": "Arbeitete an verschiedenen Projekten, von kleinen statischen Seiten bis hin zu großen Webanwendungen, stets mit Engagement und Hingabe Hält sich kontinuierlich auf dem neuesten Stand der Trends und Technologien, um stets aktuelle und fortschrittliche Lösungen anzubieten Sucht nach neuen Herausforderungen und freut sich darauf, gemeinsam innovative und wirkungsvolle Lösungen zu schaffen."
     },
-    "skills-section": {
+    "skills": {
         "title": "Meine Fähigkeiten"
     },
-    "projects-section": {
+    "projects": {
         "title": "Meine Projekte",
         "button": "Mehr sehen"
     },
     "footer": {
-        "column-1" : {
+        "column1" : {
             "title": "Sozialen Medien"
         },
-        "column-2" : {
+        "column2" : {
             "title": "Kontakt"
         }
     }

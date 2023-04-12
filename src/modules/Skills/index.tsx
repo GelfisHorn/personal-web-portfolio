@@ -16,15 +16,20 @@ import nodejs from "../../assets/img/technologies/nodejs.png";
 import nodejsD from "../../assets/img/technologies/darkmode/nodejs.png";
 import socketIo from "../../assets/img/technologies/socketIo.png";
 import socketIoD from "../../assets/img/technologies/darkmode/socketio.png";
-import sass from "../../assets/img/technologies/sass.png";
-import solidity from "../../assets/img/technologies/solidity.png";
-import solidityD from "../../assets/img/technologies/darkmode/solidity.png";
-import illustrator from "../../assets/img/technologies/Illustrator.png";
-import photoShop from "../../assets/img/technologies/PhotoShop.png";
+// import sass from "../../assets/img/technologies/sass.png";
+// import solidity from "../../assets/img/technologies/solidity.png";
+// import solidityD from "../../assets/img/technologies/darkmode/solidity.png";
+// import illustrator from "../../assets/img/technologies/Illustrator.png";
+// import photoShop from "../../assets/img/technologies/PhotoShop.png";
+// Context
 import useContextProvider from "../../hooks/useAppContext";
+// Langs
+import DE from '../../langs/de/lang.json'
+import EN from '../../langs/en/lang.json'
+import ES from '../../langs/es/lang.json'
 
 const Skills = () => {
-  const { darkMode } = useContextProvider();
+  const { darkMode, language } = useContextProvider();
   return (
     <motion.section
       // @ts-ignore
@@ -40,7 +45,7 @@ const Skills = () => {
         className={`yPaddings innerWidth ${css.container}`}
       >
         <div className={`flexCenter ${css.heading}`}>
-          <span className="primaryText">My Skills</span>
+          <span className="primaryText">{language == 'de' ? DE.skills.title : language == 'en' ? EN.skills.title : ES.skills.title}</span>
         </div>
 
         {/* carousel option 1 */}
@@ -71,7 +76,7 @@ const Skills = () => {
             <div className="imageSlider flexCenter">
               <img src={darkMode ? socketIoD : socketIo} alt="" />
             </div>
-            <div className="imageSlider flexCenter">
+            {/* <div className="imageSlider flexCenter">
               <img src={sass} alt="" />
             </div>
             <div className="imageSlider flexCenter">
@@ -82,7 +87,7 @@ const Skills = () => {
             </div>
             <div className="imageSlider flexCenter">
               <img src={photoShop} alt="" />
-            </div>
+            </div> */}
           </Slider>
         </div>
       </motion.div>

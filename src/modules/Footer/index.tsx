@@ -4,7 +4,12 @@ import { fadeIn, footerVariants, staggerChildren } from "../../utils/motion";
 import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
+// Context
 import useContextProvider from "../../hooks/useAppContext";
+// Langs
+import DE from '../../langs/de/lang.json'
+import EN from '../../langs/en/lang.json'
+import ES from '../../langs/es/lang.json'
 
 interface FooterColumn {
   title: string;
@@ -12,7 +17,7 @@ interface FooterColumn {
 }
 
 const Footer = () => {
-  const { darkMode } = useContextProvider();
+  const { darkMode, language } = useContextProvider();
   return (
     <motion.section
       variants={staggerChildren}
@@ -26,7 +31,7 @@ const Footer = () => {
         <div className=" lazy-load-4">
           <div className="flex flex-col items-start gap-16 py-16 px-16 xl:px-0 max-w-6xl w-full mx-auto">
             <div className="grid md:grid-cols-2 gap-y-10 md:gap-y-0 w-full">
-              <FooterColumn title={"Redes sociales"}>
+              <FooterColumn title={language == 'de' ? DE.footer.column1.title : language == 'en' ? EN.footer.column1.title : ES.footer.column1.title}>
                 <div className="flex flex-col gap-2">
                   <a
                     className="flex items-center gap-2 hover:text-[#2B8C88] transition-colors"
@@ -80,7 +85,7 @@ const Footer = () => {
                   </a>
                 </div>
               </FooterColumn>
-              <FooterColumn title={"Contact"}>
+              <FooterColumn title={language == 'de' ? DE.footer.column2.title : language == 'en' ? EN.footer.column2.title : ES.footer.column2.title}>
                 <div className="flex flex-col gap-2">
                   <div>
                     <a

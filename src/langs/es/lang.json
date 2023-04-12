@@ -4,34 +4,35 @@
         "services": "Servicios",
         "skills": "Habilidades",
         "projects": "Proyectos",
-        "contactme": "Contactarme"
+        "contactme": "Contacto"
     },
-    "im-section": {
-        "title": "Hola, Soy Gelfis.",
+    "hero": {
+        "title1": "Hola,",
+        "title2": "Soy Gelfis.",
         "email": "helphis.tech@gmail.com",
-        "years-experience-number": "2",
-        "years-experience-text": "Años de experiencia",
-        "side-text": "crear la aplicación te puedes imaginar, hermosa y fácil de usar"
+        "years": "2",
+        "yearstext1": "Años",
+        "yearstext2": "de experiencia",
+        "sidetext": "Agradecería una videoconferencia para conocernos y hablar de sus proyectos de desarrollo web. No dude en ponerse en contacto conmigo para concertar una reunión. ¡Gracias y nos vemos pronto!",
+        "button": "Contacto"
     },
-    "services-section": {
+    "experience": {
         "title": "Acerca de mí",
-        "span-1": "Lo ayudaré a encontrar una solución y resolver su problema. Utilizamos el diseño de procesos para crear productos digitales. Además de que también ayudan a sus negocios.",
-        "span-2": "Entendemos las necesidades que necesita para que su negocio crezca y desarrollaremos un producto en relación con sus necesidades.",
-        "icon-1": "Proyectos completados",
-        "icon-2": "Clientes contentos"
+        "span1": "Desarrollador web full-stack con experiencia apasionado por la tecnología y el desarrollo de software. Hábil en la creación de sitios web receptivos con una gran experiencia de usuario utilizando tecnologías populares y herramientas de desarrollo web.",
+        "span2": "Trabajó en varios proyectos, desde pequeñas páginas estáticas hasta grandes aplicaciones web, siempre con compromiso y dedicación. Se mantiene continuamente al día con las tendencias y tecnologías para ofrecer siempre soluciones actualizadas y progresivas. Busca nuevos desafíos y espera innovar juntos. y crear soluciones efectivas."
     },
-    "skills-section": {
+    "skills": {
         "title": "Mis Habilidades"
     },
-    "projects-section": {
+    "projects": {
         "title": "Mis proyectos",
         "button": "Ver más"
     },
     "footer": {
-        "column-1" : {
+        "column1" : {
             "title": "Redes sociales"
         },
-        "column-2" : {
+        "column2" : {
             "title": "Contacto"
         }
     }

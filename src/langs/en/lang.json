@@ -6,32 +6,33 @@
         "projects": "Projects",
         "contactme": "Contact me"
     },
-    "im-section": {
-        "title": "Hey There, I'm Gelfis.",
+    "hero": {
+        "title1": "Hey There,",
+        "title2": "I'm Gelfis.",
         "email": "helphis.tech@gmail.com",
-        "years-experience-number": "2",
-        "years-experience-text": "Years of experience",
-        "side-text": "create the application you can imagine, beautiful and simple to use"
+        "years": "2",
+        "yearstext1": "Years",
+        "yearstext2": "of experience",
+        "sidetext": "I would appreciate a video conference to get to know each other and talk about your web development projects. Feel free to contact me to arrange a meeting. Thank you and see you soon!",
+        "button": "Contact"
     },
-    "services-section": {
+    "experience": {
         "title": "About me",
-        "span-1": "I will help you with finging a solution and solve your problem, We use process design to create digital products. Besides that also help their business.",
-        "span-2": "We understand the needs you need for your business to grow and we will develop a product in relation to your needs.",
-        "icon-1": "Projects Completed",
-        "icon-2": "Happy Clients"
+        "span1": "Experienced full-stack web developer passionate about technology and software development. Skilled in creating responsive websites with a great user experience using popular technologies and web development tools",
+        "span2": "Worked on various projects, from small static pages to large web applications, always with commitment and dedication Continuously keeps up to date with trends and technologies in order to always offer up-to-date and progressive solutions Seeks new challenges and looks forward to innovating together and create effective solutions."
     },
-    "skills-section": {
+    "skills": {
         "title": "My Skills"
     },
-    "projects-section": {
+    "projects": {
         "title": "My projects",
-        "button": "View trips"
+        "button": "See more"
     },
     "footer": {
-        "column-1" : {
+        "column1" : {
             "title": "Social media"
         },
-        "column-2" : {
+        "column2" : {
             "title": "Contact"
         }
     }

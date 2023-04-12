@@ -2,10 +2,15 @@ import css from "./Projects.module.scss";
 import { portfolioExp } from "../../utils/data";
 import { fadeIn, staggerChildren } from "../../utils/motion";
 import { motion } from "framer-motion";
+// Context
 import useContextProvider from "../../hooks/useAppContext";
+// Langs
+import DE from '../../langs/de/lang.json'
+import EN from '../../langs/en/lang.json'
+import ES from '../../langs/es/lang.json'
 
 const Projects = () => {
-  const { darkMode } = useContextProvider();
+  const { darkMode, language } = useContextProvider();
   return (
     <>
       <motion.section
@@ -18,7 +23,7 @@ const Projects = () => {
       >
         <a className="anchor" id="projects"></a>
         <div className={`flexCenter innerWidth ${css.container}`}>
-          <h1 className="primaryText flexCenter">My Projects</h1>
+          <h1 className="primaryText flexCenter">{language == 'de' ? DE.projects.title : language == 'en' ? EN.projects.title : ES.projects.title}</h1>
           <div className={css.pageContent}>
             {portfolioExp.map((client, i) => (
               <motion.div
@@ -33,7 +38,7 @@ const Projects = () => {
                     target="_blank"
                     className="primaryButton"
                   >
-                    View Trips
+                    {language == 'de' ? DE.projects.button : language == 'en' ? EN.projects.button : ES.projects.button}
                   </a>
                 </div>
               </motion.div>
