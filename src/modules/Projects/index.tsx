@@ -23,7 +23,7 @@ const Projects = () => {
       >
         <a className="anchor" id="projects"></a>
         <div className={`flexCenter innerWidth ${css.container}`}>
-          <h1 className="primaryText flexCenter">{language == 'de' ? DE.projects.title : language == 'en' ? EN.projects.title : ES.projects.title}</h1>
+          <h1 className="primaryText flexCenter text-center">{language == 'de' ? DE.projects.title : language == 'en' ? EN.projects.title : ES.projects.title}</h1>
           <div className={css.pageContent}>
             {portfolioExp.map((client, i) => (
               <motion.div

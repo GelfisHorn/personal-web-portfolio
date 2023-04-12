@@ -27,10 +27,10 @@ const Experience = () => {
     >
       <a className="anchor" id="services"></a>
       <div
-        className={`sm:px-5 md:paddings yPaddings flexCenter innerWidth text-center`}
+        className={`sm:px-5 md:paddings py-16 flexCenter innerWidth text-center`}
       >
         <motion.div variants={textVariant(0.5)} className={`${css.RightSide} flex flex-col gap-8`}>
-          <span className="primaryText text-[#286F6C] no-underline">{language == 'de' ? DE.experience.title : language == 'en' ? EN.experience.title : ES.experience.title}</span>
+          <span className="primaryText text-[#286F6C] no-underline leading-[2.8rem] pt-2">{language == 'de' ? DE.experience.title : language == 'en' ? EN.experience.title : ES.experience.title}</span>
           <div className="flex flex-col items-center gap-8 md:max-w-2/3">
             <p dangerouslySetInnerHTML={{__html: language == 'de' ? DE.experience.span1 : language == 'en' ? EN.experience.span1 : ES.experience.span1}}></p>
             <p dangerouslySetInnerHTML={{__html: language == 'de' ? DE.experience.span2 : language == 'en' ? EN.experience.span2 : ES.experience.span2}}></p>
