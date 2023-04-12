@@ -45,7 +45,7 @@ const Skills = () => {
         className={`yPaddings innerWidth ${css.container}`}
       >
         <div className={`flexCenter ${css.heading}`}>
-          <span className="primaryText">{language == 'de' ? DE.skills.title : language == 'en' ? EN.skills.title : ES.skills.title}</span>
+          <span className="primaryText text-center">{language == 'de' ? DE.skills.title : language == 'en' ? EN.skills.title : ES.skills.title}</span>
         </div>
 
         {/* carousel option 1 */}
