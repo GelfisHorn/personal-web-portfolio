@@ -27,19 +27,15 @@ const Experience = () => {
     >
       <a className="anchor" id="services"></a>
       <div
-        className={`paddings yPaddings flexCenter innerWidth ${css.container}`}
+        className={`sm:px-5 md:paddings yPaddings flexCenter innerWidth text-center`}
       >
-        <motion.div variants={textVariant(0.5)} className={css.RightSide}>
-          <span className="primaryText">{language == 'de' ? DE.experience.title : language == 'en' ? EN.experience.title : ES.experience.title}</span>
-          <div className="flex flex-col items-center gap-8">
-            <p className="w-2/3">{language == 'de' ? DE.experience.span1 : language == 'en' ? EN.experience.span1 : ES.experience.span1}</p>
-            <p className="w-2/3">{language == 'de' ? DE.experience.span2 : language == 'en' ? EN.experience.span2 : ES.experience.span2}</p>
+        <motion.div variants={textVariant(0.5)} className={`${css.RightSide} flex flex-col gap-8`}>
+          <span className="primaryText text-[#286F6C] no-underline">{language == 'de' ? DE.experience.title : language == 'en' ? EN.experience.title : ES.experience.title}</span>
+          <div className="flex flex-col items-center gap-8 md:max-w-2/3">
+            <p dangerouslySetInnerHTML={{__html: language == 'de' ? DE.experience.span1 : language == 'en' ? EN.experience.span1 : ES.experience.span1}}></p>
+            <p dangerouslySetInnerHTML={{__html: language == 'de' ? DE.experience.span2 : language == 'en' ? EN.experience.span2 : ES.experience.span2}}></p>
+            <p dangerouslySetInnerHTML={{__html: language == 'de' ? DE.experience.span3 : language == 'en' ? EN.experience.span3 : ES.experience.span3}}></p>
           </div>
-          {/* <div className="flex flex-col items-center gap-8">
-            <p className="w-2/3">Ich bin ein Full-Stack-Webentwickler, der sich leidenschaftlich für Technologie und Softwareentwicklung begeistert. Ich liebe es, an herausfordernden Projekten zu arbeiten und innovative Lösungen für Probleme zu schaffen. Meine Erfahrung in der Webentwicklung hat mich zum Experten in der Erstellung von responsiven Websites mit einer großartigen Benutzererfahrung gemacht. Zusätzlich bin ich mit den beliebtesten Technologien sowie vielen anderen Webentwicklungstools sehr vertraut.</p>
-            <p className="w-2/3">Im Laufe meiner Karriere als Webentwickler hatte ich die Möglichkeit, in verschiedenen Umgebungen und Projekten zu arbeiten, von kleinen statischen Seiten bis hin zu großen Webanwendungen, wobei ich in jedem von ihnen stets dasselbe Engagement und dieselbe Hingabe aufrechterhalte.</p>
-            <p className="w-2/3">Meine Leidenschaft für die Webentwicklung treibt mich dazu an, auf dem neuesten Stand der Trends und Technologien auf dem Markt zu bleiben, was es mir ermöglicht, stets aktuelle und fortschrittliche Lösungen anzubieten. Wenn Sie auf der Suche nach einem engagierten und leidenschaftlichen Full-Stack-Webentwickler sind, zögern Sie nicht, mich zu kontaktieren! Ich freue mich darauf, mit Ihnen an Ihren nächsten Projekten zu arbeiten und gemeinsam innovative und wirkungsvolle Lösungen zu schaffen.</p>
-          </div> */}
         </motion.div>
       </div>
     </motion.section>

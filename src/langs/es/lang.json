@@ -8,18 +8,19 @@
     },
     "hero": {
         "title1": "Hola,",
-        "title2": "Soy Gelfis.",
+        "title2": "Soy Gelfis Horn",
         "email": "helphis.tech@gmail.com",
         "years": "2",
         "yearstext1": "Años",
         "yearstext2": "de experiencia",
         "sidetext": "Agradecería una videoconferencia para conocernos y hablar de sus proyectos de desarrollo web. No dude en ponerse en contacto conmigo para concertar una reunión. ¡Gracias y nos vemos pronto!",
-        "button": "Contacto"
+        "button": "Contáctame"
     },
     "experience": {
         "title": "Acerca de mí",
-        "span1": "Desarrollador web full-stack con experiencia apasionado por la tecnología y el desarrollo de software. Hábil en la creación de sitios web receptivos con una gran experiencia de usuario utilizando tecnologías populares y herramientas de desarrollo web.",
-        "span2": "He trabajado en varios proyectos, desde pequeñas páginas estáticas hasta grandes aplicaciones web, siempre con compromiso y dedicación. Manteniendome continuamente al día con las tendencias y tecnologías para ofrecer siempre soluciones actualizadas y progresivas. Busco nuevos desafíos y espero innovar juntos, y crear soluciones efectivas."
+        "span1": "Soy un desarrollador web <span>full stack</span> apasionado por la tecnología y el desarrollo de software. Me encanta trabajar en proyectos desafiantes y crear soluciones innovadoras a los problemas. Mi experiencia en desarrollo web me ha convertido en un <span>experto</span> en la creación de sitios web receptivos con una excelente experiencia de usuario. Además, estoy muy familiarizado con las tecnologías más populares, así como con muchas otras herramientas de desarrollo web.",
+        "span2": "A lo largo de mi carrera como desarrollador web he tenido la oportunidad de trabajar en diferentes entornos y proyectos, desde pequeños sitios estáticos hasta grandes aplicaciones web, manteniendo siempre el mismo <span>compromiso y dedicación</span> en cada uno de ellos.",
+        "span3": "Mi pasión por el desarrollo web me impulsa a estar al día con las tendencias y tecnologías del mercado, lo que me permite ofrecer siempre soluciones actualizadas y progresivas. Si está buscando un desarrollador web full stack <span>dedicado y apasionado</span>, ¡no dude en ponerse en contacto conmigo! Espero trabajar con usted en sus próximos proyectos y crear juntos soluciones innovadoras y efectivas."
     },
     "skills": {
         "title": "Mis Habilidades"

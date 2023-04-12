@@ -44,13 +44,15 @@ const Hero = () => {
             >
               {language == 'de' ? DE.hero.sidetext : language == 'en' ? EN.hero.sidetext : ES.hero.sidetext}
             </motion.span>
-            <a href="mailto:helphis.tech@gmail.com">
-              <div className="bg-[#0D2F3F] hover:bg-[#194F68] transition-colors text-zinc-200 w-fit px-6 py-2 rounded-lg">
-                <span className="text-lg">{language == 'de' ? DE.hero.button : language == 'en' ? EN.hero.button : ES.hero.button}</span>
-              </div>
-            </a>
           </div>
+
+          <a className="block lg:hidden " href="mailto:helphis.tech@gmail.com">
+            <div className="bg-[#0D2F3F] hover:bg-[#194F68] transition-colors text-zinc-200 w-fit px-6 py-3 rounded-lg">
+              <span className="text-lg">{language == 'de' ? DE.hero.button : language == 'en' ? EN.hero.button : ES.hero.button}</span>
+            </div>
+          </a>
         </div>
+
 
         {/* person */}
         <motion.div
@@ -77,6 +79,11 @@ const Hero = () => {
         </a> */}
 
         {/* lower elements */}
+        <a className="hidden lg:block absolute top-1/2 -translate-y-1/2" href="mailto:helphis.tech@gmail.com">
+          <div className="bg-[#0D2F3F] hover:bg-[#194F68] transition-colors text-zinc-200 w-fit px-6 py-2 rounded-lg">
+            <span className="text-lg">{language == 'de' ? DE.hero.button : language == 'en' ? EN.hero.button : ES.hero.button}</span>
+          </div>
+        </a>
         <div className={css.lowerElements}>
           <motion.div
             variants={fadeIn("right", "tween", 0.3, 1)}
