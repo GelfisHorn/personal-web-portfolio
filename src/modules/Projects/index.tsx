@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 // Context
 import useContextProvider from "../../hooks/useAppContext";
 // Langs
-import DE from '../../langs/de/lang.json'
-import EN from '../../langs/en/lang.json'
-import ES from '../../langs/es/lang.json'
+import DE from "../../langs/de/lang.json";
+import EN from "../../langs/en/lang.json";
+import ES from "../../langs/es/lang.json";
 
 const Projects = () => {
   const { darkMode, language } = useContextProvider();
@@ -23,7 +23,13 @@ const Projects = () => {
       >
         <a className="anchor" id="projects"></a>
         <div className={`flexCenter innerWidth ${css.container}`}>
-          <h1 className="primaryText flexCenter text-center">{language == 'de' ? DE.projects.title : language == 'en' ? EN.projects.title : ES.projects.title}</h1>
+          <h1 className="primaryText flexCenter text-center">
+            {language == "de"
+              ? DE.projects.title
+              : language == "en"
+              ? EN.projects.title
+              : ES.projects.title}
+          </h1>
           <div className={css.pageContent}>
             {portfolioExp.map((client, i) => (
               <motion.div
@@ -38,7 +44,11 @@ const Projects = () => {
                     target="_blank"
                     className="primaryButton"
                   >
-                    {language == 'de' ? DE.projects.button : language == 'en' ? EN.projects.button : ES.projects.button}
+                    {language == "de"
+                      ? DE.projects.button
+                      : language == "en"
+                      ? EN.projects.button
+                      : ES.projects.button}
                   </a>
                 </div>
               </motion.div>
