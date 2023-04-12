@@ -79,7 +79,7 @@ const Skills = () => {
             {/* <div className="imageSlider flexCenter">
               <img src={sass} alt="" />
             </div>
-            <div className="imageSlider flexCenter">
+            {/* <div className="imageSlider flexCenter">
               <img src={darkMode ? solidityD : solidity} alt="" />
             </div>
             <div className="imageSlider flexCenter">
