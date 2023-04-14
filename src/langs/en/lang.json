@@ -27,7 +27,13 @@
     },
     "projects": {
         "title": "My projects",
-        "button": "See more"
+        "button": "See more",
+        "infohelphisTech": "Development of a customer service dashboard to monitor and improve customer satisfaction. A user-friendly dashboard that provides real-time data and analytics to enable quick decision-making and enhance the customer experience.",
+        "infoEvolution":"Develop a user-friendly platform for trading cryptocurrencies and manage your investments with ease.",
+        "infoUpTask":"Develop a task management app with a user-friendly interface and features for managing tasks, deadlines, and notes. Increase your productivity and organize your life.",
+        "infoBazar":"Discover our agricultural trading platform based on blockchain technology. We offer you a transparent, secure, and efficient way to buy and sell agricultural products.",
+        "infoTrami": "Develop a platform for managing law firms where lawyers can view their assigned cases and pending clients, as well as contact information and other functions.",
+        "infoEnvi": "Our platform digitizes the entire process of supplier invoice management, from submission to payment, to increase efficiency and improve traceability."
     },
     "footer": {
         "column1" : {
