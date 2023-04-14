@@ -45,6 +45,7 @@ const Projects3 = () => {
               alignItems: "center",
               marginTop: "70px",
               padding: " 32px 64px",
+              // flexDirection: "row-reverse",
             }}
           >
             <div style={{ flex: "0 0 60%" }}>
@@ -56,7 +57,9 @@ const Projects3 = () => {
                 flex: "0 0 55%",
                 marginLeft: "-15%",
                 textAlign: "end",
+                // textAlign: "start",
                 alignItems: "flex-start",
+                // alignItems: "flex-end",
               }}
             >
               <p>project develop</p>
