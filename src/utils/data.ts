@@ -80,6 +80,13 @@ export const workExp = [
       "As a Full Stack Developer at ABC Company, I was responsible for developing and maintaining the company's web application using the MERN stack (MongoDB, Express, React, Node.js) as well as MySQL. I collaborated with the product team to design and develop features, as well as maintain and scale the application.",
   },
 ];
+export const techHelphis = [FaReact, SiExpress, SiTailwindcss, DiMongodb];
+export const techEvo = [FaReact, SiExpress, SiTailwindcss, DiMongodb];
+export const techUptask = [FaReact, SiExpress, SiTailwindcss, DiMongodb];
+export const techBazar = [FaReact, TbBrandNextjs, SiTailwindcss];
+export const techTrami = [FaAngular, SiExpress, SiTailwindcss, DiMongodb];
+export const techEnvi = [FaReact, SiExpress, SiTailwindcss, TbSql];
+
 export const portfolioExp = [
   {
     title: "HelphisTech",

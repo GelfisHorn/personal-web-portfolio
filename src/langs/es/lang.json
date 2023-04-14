@@ -27,7 +27,13 @@
     },
     "projects": {
         "title": "Mis proyectos",
-        "button": "Ver más"
+        "button": "Ver más",
+        "infohelphisTech": "Desarrollo de un panel de control de servicio al cliente para monitorear y mejorar la satisfacción del cliente. Un panel de control fácil de usar que proporciona datos en tiempo real y análisis para tomar decisiones rápidas y mejorar la experiencia del cliente.",
+        "infoEvolution":"Desarrolle una plataforma fácil de usar para el comercio de criptomonedas y administre sus inversiones con facilidad.",
+        "infoUpTask":"Desarrolle una aplicación de gestión de tareas con una interfaz fácil de usar y funciones para administrar tareas, plazos y notas. Aumente su productividad y organice su vida.",
+        "infoBazar":"Descubre nuestra plataforma de comercio agrícola basada en tecnología blockchain. Te ofrecemos una forma transparente, segura y eficiente de comprar y vender productos agrícolas.",
+        "infoTrami": "Desarrolle una plataforma de gestión administrativa para abogados en la que puedan ver sus casos asignados y clientes pendientes, así como datos de contacto y otras funciones.",
+        "infoEnvi": "Nuestra plataforma digitaliza todo el proceso de gestión de facturas de proveedores, desde la presentación hasta el pago, para aumentar la eficiencia y mejorar la trazabilidad."
     },
     "footer": {
         "column1" : {

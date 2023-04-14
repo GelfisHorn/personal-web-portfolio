@@ -27,7 +27,13 @@
     },
     "projects": {
         "title": "Meine Projekte",
-        "button": "Mehr sehen"
+        "button": "Mehr sehen",
+        "infohelphisTech": "Entwicklung eines Customer-Service-Dashboards zur Überwachung und Verbesserung der Kundenzufriedenheit. Ein benutzerfreundliches Dashboard, das Echtzeitdaten und Analytics bereitstellt, um schnelle Entscheidungen und die Verbesserung des Kundenerlebnisses zu ermöglichen.",
+        "infoEvolution":"Entwickeln Sie eine benutzerfreundliche Plattform für den Handel mit Kryptowährungen und verwalten Sie Ihre Investitionen mit Leichtigkeit.",
+        "infoUpTask":"Entwickeln Sie eine Aufgabenmanagement-App mit einer benutzerfreundlichen Oberfläche und Funktionen zur Verwaltung von Aufgaben, Terminen und Notizen. Steigern Sie Ihre Produktivität und organisieren Sie Ihr Leben.",
+        "infoBazar":"Entdecken Sie unseren landwirtschaftlichen Handelsplatz, der auf der Blockchain-Technologie basiert. Wir bieten Ihnen eine transparente, sichere und effiziente Art, um Agrarprodukte zu kaufen und zu verkaufen.",
+        "infoTrami": "Entwickeln Sie eine Plattform zur Verwaltung von Anwaltskanzleien, auf der Anwälte ihre zugewiesenen Fälle und ausstehenden Kunden sowie Kontaktdaten und andere Funktionen einsehen können.",
+        "infoEnvi": "Unsere Plattform digitalisiert den gesamten Prozess der Lieferantenrechnungsabwicklung, von der Übermittlung der Rechnung bis zur Zahlung, um die Effizienz zu steigern und die Nachverfolgbarkeit zu verbessern."
     },
     "footer": {
         "column1" : {
