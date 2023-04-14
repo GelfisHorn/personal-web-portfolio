@@ -2,22 +2,22 @@ import { useState, createContext, FC, useEffect } from "react";
 
 const AppContext = createContext({
   darkMode: false,
-  language: 'de',
+  language: "de",
   setDarkMode: () => {},
   handleChangeTheme: () => {},
-  handleSetLanguage: (lang: string) => {}
+  handleSetLanguage: (lang: string) => {},
 });
 
 const AppContextProvider: FC = ({ children }: any) => {
   const [darkMode, setDarkMode] = useState(false);
-  const [language, setLanguage] = useState('de');
+  const [language, setLanguage] = useState("de");
 
   // On component load set language from LS or set 'de'
   useEffect(() => {
-    const lang = localStorage.getItem('lang') || 'de';
+    const lang = localStorage.getItem("lang") || "de";
     setLanguage(lang);
-    console.log(lang)
-  }, [])
+    console.log(lang);
+  }, []);
 
   // Change page theme
   function handleChangeTheme() {
@@ -26,9 +26,9 @@ const AppContextProvider: FC = ({ children }: any) => {
 
   // Change page language
   function handleSetLanguage(lang: string) {
-    console.log(lang)
+    console.log(lang);
     setLanguage(lang);
-    localStorage.setItem('lang', lang);
+    localStorage.setItem("lang", lang);
   }
 
   return (
@@ -39,7 +39,7 @@ const AppContextProvider: FC = ({ children }: any) => {
         // @ts-ignore
         setDarkMode,
         handleChangeTheme,
-        handleSetLanguage
+        handleSetLanguage,
       }}
     >
       {children}

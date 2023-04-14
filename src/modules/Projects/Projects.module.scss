@@ -1,21 +1,30 @@
-@import '../../sass/constants.scss';
+@import "../../sass/constants.scss";
 
-$base: '../../assets/img';
-$imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png','project1-santiago.png', 'project2-santiago.png', 'project3-santiago.png';
+$base: "../../assets/img";
+$imageIds: "project1-mathias.png", "project2-mathias.png",
+  "project3-mathias.png", "project1-santiago.png", "project2-santiago.png",
+  "project3-santiago.png";
 
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.wrapper{
-  
-  .container{
+.wrapper {
+  display: flex;
+
+  @media(min-width: $lg ){
+    display: none;;
+  }
+  @media(min-width: 1640px ){
+    display: flex;
+  }
+  .container {
     display: flex;
     flex-direction: column;
     padding: 4rem 0;
 
-    h1{
+    h1 {
       margin-bottom: 4rem;
     }
     .pageContent {
@@ -24,16 +33,16 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
       padding: 1rem;
       width: 95%;
       margin: 0 auto;
-      
+
       @media (min-width: $md) {
         grid-template-columns: repeat(2, 1fr);
       }
-      
+
       @media (min-width: $lg) {
         grid-template-columns: repeat(2, 1fr);
       }
-    
-      .card {  
+
+      .card {
         position: relative;
         display: flex;
         align-items: flex-end;
@@ -50,19 +59,19 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
           0 4px 4px rgba(0,0,0,0.05), 
           0 8px 8px rgba(0,0,0,0.05),
           0 16px 16px rgba(0,0,0,0.05); */
-        
+
         /* @media (min-width: $md) {
           height: 350px;
         } */
-        
-        &:hover{
+
+        &:hover {
           color: white;
         }
-        &:focus{
+        &:focus {
           color: #fff;
         }
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           left: 0;
@@ -73,9 +82,9 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
           transition: transform calc(var(--d) * 1.5) var(--e);
           pointer-events: none;
         }
-        
+
         &:hover:after {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 0;
@@ -92,30 +101,30 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
             hsla(0, 0%, 0%, 0.123) 39.4%,
             hsla(0, 0%, 0%, 0.182) 46.6%,
             hsla(0, 0%, 0%, 0.249) 53.1%,
-            hsla(0, 0%, 0%, 0.320) 58.9%,
+            hsla(0, 0%, 0%, 0.32) 58.9%,
             hsla(0, 0%, 0%, 0.394) 64.3%,
             hsla(0, 0%, 0%, 0.468) 69.3%,
-            hsla(0, 0%, 0%, 0.540) 74.1%,
+            hsla(0, 0%, 0%, 0.54) 74.1%,
             hsla(0, 0%, 0%, 0.607) 78.8%,
             hsla(0, 0%, 0%, 0.668) 83.6%,
             hsla(0, 0%, 0%, 0.721) 88.7%,
             hsla(0, 0%, 0%, 0.762) 94.1%,
-            hsla(0, 0%, 0%, 0.790) 100%
+            hsla(0, 0%, 0%, 0.79) 100%
           );
           transform: translateY(-50%);
           transition: transform calc(var(--d) * 2) var(--e);
         }
-        
+
         @each $id in $imageIds {
           $i: index($imageIds, $id);
-          
+
           &:nth-child(#{$i}):before {
             background-image: url("#{$base}/#{$id}");
             background-size: contain;
             background-repeat: no-repeat;
           }
         }
-    
+
         .content {
           position: relative;
           display: flex;
@@ -125,11 +134,11 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
           padding: 1rem;
           transition: transform var(--d) var(--e);
           z-index: 1;
-          
+
           > * + * {
             margin-top: 1rem;
           }
-    
+
           .title {
             font-size: 1.3rem;
             font-weight: bold;
@@ -138,7 +147,7 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
             // width: 100%;
             // border-radius: 999%;
           }
-    
+
           .copy {
             // font-family: var(--font-serif);
             font-size: 1.125rem;
@@ -146,7 +155,7 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
             line-height: 1.35;
           }
         }
-    }
+      }
       .title {
         display: none;
       }
@@ -158,29 +167,31 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
       .card:hover .title {
         display: block;
       }
-      
+
       .content {
         transform: translateY(calc(100% - 4.5rem));
-        
+
         > *:not(.title) {
           opacity: 0;
           transform: translateY(1rem);
-          transition:
-            transform var(--d) var(--e),
-            opacity var(--d) var(--e);
+          transition: transform var(--d) var(--e), opacity var(--d) var(--e);
         }
       }
-      
+
       .card:hover,
       .card:focus-within {
         align-items: center;
 
-        &:before { transform: translateY(-4%); }
-        &:after { transform: translateY(-50%); }
-    
+        &:before {
+          transform: translateY(-4%);
+        }
+        &:after {
+          transform: translateY(-50%);
+        }
+
         .content {
           transform: translateY(0);
-    
+
           > *:not(.title) {
             opacity: 1;
             transform: translateY(0);
@@ -188,7 +199,7 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
           }
         }
       }
-      
+
       .card:focus-within {
         &:before,
         &:after,
@@ -200,5 +211,3 @@ $imageIds: 'project1-mathias.png','project2-mathias.png','project3-mathias.png',
     }
   }
 }
-
-

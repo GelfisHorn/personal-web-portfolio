@@ -1,0 +1,35 @@
+@import "../../sass/constants.scss";
+
+.wrapper{
+  display: none;
+
+  @media(min-width: $lg ){
+    display: flex;
+    flex-direction: column;
+  }
+  @media(min-width: 1640px ){
+    display: none;
+  }
+  .container{
+    .view{
+      // flex-direction: row-reverse; //aqui es donde la invertire
+      .containerPageContent{
+        position: relative;
+        
+        .pageContent{
+        width: 80%;
+        z-index: 999;
+
+        p{
+        }
+        h2{
+        }
+        h4{}
+        }
+      }
+      .pageImage{ 
+        width: 50%;
+      }
+    }
+  }
+}
