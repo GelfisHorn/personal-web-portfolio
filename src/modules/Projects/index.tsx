@@ -18,7 +18,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="show"
         className={`paddings ${css.wrapper} ${
-          darkMode ? "bg-darkMode" : "bg-white"
+          darkMode ? "bg-darkMode" : "bg-primary"
         }`}
       >
         <a className="anchor" id="projects"></a>

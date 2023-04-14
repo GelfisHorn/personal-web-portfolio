@@ -24,9 +24,9 @@ import socketIoD from "../../assets/img/technologies/darkmode/socketio.png";
 // Context
 import useContextProvider from "../../hooks/useAppContext";
 // Langs
-import DE from '../../langs/de/lang.json'
-import EN from '../../langs/en/lang.json'
-import ES from '../../langs/es/lang.json'
+import DE from "../../langs/de/lang.json";
+import EN from "../../langs/en/lang.json";
+import ES from "../../langs/es/lang.json";
 
 const Skills = () => {
   const { darkMode, language } = useContextProvider();
@@ -45,7 +45,13 @@ const Skills = () => {
         className={`yPaddings innerWidth ${css.container}`}
       >
         <div className={`flexCenter ${css.heading}`}>
-          <span className="primaryText text-center">{language == 'de' ? DE.skills.title : language == 'en' ? EN.skills.title : ES.skills.title}</span>
+          <span className="primaryText text-center">
+            {language == "de"
+              ? DE.skills.title
+              : language == "en"
+              ? EN.skills.title
+              : ES.skills.title}
+          </span>
         </div>
 
         {/* carousel option 1 */}

@@ -10,6 +10,7 @@ import Projects from "./modules/Projects";
 import Footer from "./modules/Footer";
 // context
 import useContextProvider from "./hooks/useAppContext";
+import Projects3 from "./modules/projects3";
 
 function App() {
   const { darkMode } = useContextProvider();
@@ -26,6 +27,7 @@ function App() {
         {/* <Works /> */}
         <Skills />
         <Projects />
+        <Projects3 />
         <Footer />
       </div>
     </div>

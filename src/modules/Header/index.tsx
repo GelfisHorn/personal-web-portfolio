@@ -17,16 +17,17 @@ import { MdDarkMode } from "react-icons/md";
 // context
 import useContextProvider from "../../hooks/useAppContext";
 // langs
-import DE from '../../langs/de/lang.json'
-import EN from '../../langs/en/lang.json'
-import ES from '../../langs/es/lang.json'
+import DE from "../../langs/de/lang.json";
+import EN from "../../langs/en/lang.json";
+import ES from "../../langs/es/lang.json";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
   const menuRef = useRef();
 
-  const { darkMode, handleChangeTheme, language, handleSetLanguage } = useContextProvider();
+  const { darkMode, handleChangeTheme, language, handleSetLanguage } =
+    useContextProvider();
 
   useOutsideAlerter({
     menuRef,
@@ -64,25 +65,59 @@ const Header = () => {
           }`}
         >
           <li>
-            <a href="#iam">{language == 'de' ? DE.navbar.im : language == 'en' ? EN.navbar.im : ES.navbar.im}</a>
+            <a href="#iam">
+              {language == "de"
+                ? DE.navbar.im
+                : language == "en"
+                ? EN.navbar.im
+                : ES.navbar.im}
+            </a>
           </li>
           <li>
-            <a href="#services">{language == 'de' ? DE.navbar.services : language == 'en' ? EN.navbar.services : ES.navbar.services}</a>
+            <a href="#services">
+              {language == "de"
+                ? DE.navbar.services
+                : language == "en"
+                ? EN.navbar.services
+                : ES.navbar.services}
+            </a>
           </li>
           <li>
-            <a href="#skills">{language == 'de' ? DE.navbar.skills : language == 'en' ? EN.navbar.skills : ES.navbar.skills}</a>
+            <a href="#skills">
+              {language == "de"
+                ? DE.navbar.skills
+                : language == "en"
+                ? EN.navbar.skills
+                : ES.navbar.skills}
+            </a>
           </li>
           <li>
-            <a href="#projects">{language == 'de' ? DE.navbar.projects : language == 'en' ? EN.navbar.projects : ES.navbar.projects}</a>
+            <a href="#projects">
+              {language == "de"
+                ? DE.navbar.projects
+                : language == "en"
+                ? EN.navbar.projects
+                : ES.navbar.projects}
+            </a>
           </li>
           <li>
-            <a href="#footer">{language == 'de' ? DE.navbar.contactme : language == 'en' ? EN.navbar.contactme : ES.navbar.contactme}</a>
+            <a href="#footer">
+              {language == "de"
+                ? DE.navbar.contactme
+                : language == "en"
+                ? EN.navbar.contactme
+                : ES.navbar.contactme}
+            </a>
           </li>
           <li onClick={handleChangeTheme}>
             {darkMode ? <CiLight /> : <MdDarkMode />}
           </li>
           <li>
-            <select className="bg-transparent" onChange={(e) => handleSetLanguage(e.target.value)} value={language}>
+            <select
+              className="bg-transparent"
+              onChange={(e) => handleSetLanguage(e.target.value)}
+              value={language}
+            >
               <option value="de">DE</option>
               <option value="en">EN</option>
               <option value="es">ES</option>

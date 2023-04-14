@@ -26,6 +26,12 @@ import { DiMongodb } from "react-icons/di";
 import { BiNetworkChart } from "react-icons/bi";
 import { BsFillCameraReelsFill } from "react-icons/bs";
 import { PrevArrow } from "./../modules/Skills/components/ArrowsCarousel";
+import project1 from "../assets/img/project1-mathias.png";
+import project2 from "../assets/img/project2-mathias.png";
+import project3 from "../assets/img/project3-mathias.png";
+import project4 from "../assets/img/project1-santiago.png";
+import project5 from "../assets/img/project2-santiago.png";
+import project6 from "../assets/img/project3-santiago.png";
 
 export const projectExperience = [
   {
@@ -77,34 +83,75 @@ export const workExp = [
 export const portfolioExp = [
   {
     title: "HelphisTech",
-    info: "ExChange Cryptos",
+    infoDE:
+      "Entwicklung eines Customer-Service-Dashboards zur Überwachung und Verbesserung der Kundenzufriedenheit. Ein benutzerfreundliches Dashboard, das Echtzeitdaten und Analytics bereitstellt, um schnelle Entscheidungen und die Verbesserung des Kundenerlebnisses zu ermöglichen.",
+    infoEn:
+      "Development of a customer service dashboard to monitor and improve customer satisfaction. A user-friendly dashboard that provides real-time data and analytics to enable quick decision-making and enhance the customer experience.",
+    infoEs:
+      "Desarrollo de un panel de control de servicio al cliente para monitorear y mejorar la satisfacción del cliente. Un panel de control fácil de usar que proporciona datos en tiempo real y análisis para tomar decisiones rápidas y mejorar la experiencia del cliente.",
     url: "https://helphistech.vercel.app",
-    tec: ["react.png", "mongodb.png", "nodejs.png", "expressjs.png"],
+    img: project1,
+    tech: [FaReact, SiExpress, SiTailwindcss, DiMongodb],
   },
   {
     title: "Evolution",
-    info: "Dashboar admin services",
+    infoDE:
+      "Entwickeln Sie eine benutzerfreundliche Plattform für den Handel mit Kryptowährungen und verwalten Sie Ihre Investitionen mit Leichtigkeit.",
+    infoEn:
+      "Develop a user-friendly platform for trading cryptocurrencies and manage your investments with ease.",
+    infoEs:
+      "Desarrolle una plataforma fácil de usar para el comercio de criptomonedas y administre sus inversiones con facilidad.",
     url: "https://evolution-react.vercel.app",
+    img: project2,
+    tech: [FaReact, SiExpress, SiTailwindcss, DiMongodb],
   },
   {
     title: "UpTask",
-    info: "Manage and administrate projects and tasks",
+    infoDE:
+      "Entwickeln Sie eine Aufgabenmanagement-App mit einer benutzerfreundlichen Oberfläche und Funktionen zur Verwaltung von Aufgaben, Terminen und Notizen. Steigern Sie Ihre Produktivität und organisieren Sie Ihr Leben.",
+    infoEn:
+      "Develop a task management app with a user-friendly interface and features for managing tasks, deadlines, and notes. Increase your productivity and organize your life.",
+    infoEs:
+      "Desarrolle una aplicación de gestión de tareas con una interfaz fácil de usar y funciones para administrar tareas, plazos y notas. Aumente su productividad y organice su vida.",
     url: "https://uptaskdev.netlify.app/",
+    img: project3,
+    tech: [FaReact, SiExpress, SiTailwindcss, DiMongodb],
   },
   {
     title: "Bazar Network",
-    info: "Discover the new way to market your agricultural products in the world and with a decentralized economy",
+    infoDE:
+      "Entdecken Sie unseren landwirtschaftlichen Handelsplatz, der auf der Blockchain-Technologie basiert. Wir bieten Ihnen eine transparente, sichere und effiziente Art, um Agrarprodukte zu kaufen und zu verkaufen.",
+    infoEn:
+      "Discover our agricultural trading platform based on blockchain technology. We offer you a transparent, secure, and efficient way to buy and sell agricultural products.",
+    infoEs:
+      "Descubre nuestra plataforma de comercio agrícola basada en tecnología blockchain. Te ofrecemos una forma transparente, segura y eficiente de comprar y vender productos agrícolas.",
     url: "https://www.bazar.network/",
+    img: project4,
+    tech: [FaReact, TbBrandNextjs, SiTailwindcss],
   },
   {
     title: "TramiDeudas",
-    info: "Discover how to give your debt-free finances a new chance",
+    infoDE:
+      "Entwickeln Sie eine Plattform zur Verwaltung von Anwaltskanzleien, auf der Anwälte ihre zugewiesenen Fälle und ausstehenden Kunden sowie Kontaktdaten und andere Funktionen einsehen können.",
+    infoEn:
+      "Develop a platform for managing law firms where lawyers can view their assigned cases and pending clients, as well as contact information and other functions.",
+    infoEs:
+      "Desarrolle una plataforma de gestión administrativa para abogados en la que puedan ver sus casos asignados y clientes pendientes, así como datos de contacto y otras funciones.",
     url: "https://tramideudas.es/",
+    img: project5,
+    tech: [FaAngular, SiExpress, SiTailwindcss, DiMongodb],
   },
   {
     title: "Enviexpress",
-    info: "We are your strategic ally for your marketing and distribution of your products",
+    infoDE:
+      "Unsere Plattform digitalisiert den gesamten Prozess der Lieferantenrechnungsabwicklung, von der Übermittlung der Rechnung bis zur Zahlung, um die Effizienz zu steigern und die Nachverfolgbarkeit zu verbessern.",
+    infoEn:
+      "Our platform digitizes the entire process of supplier invoice management, from submission to payment, to increase efficiency and improve traceability.",
+    infoEs:
+      "Nuestra plataforma digitaliza todo el proceso de gestión de facturas de proveedores, desde la presentación hasta el pago, para aumentar la eficiencia y mejorar la trazabilidad.",
     url: "https://enviexpresslogistica.com/",
+    img: project6,
+    tech: [FaReact, SiExpress, SiTailwindcss, TbSql],
   },
 ];
 export const comments = [
