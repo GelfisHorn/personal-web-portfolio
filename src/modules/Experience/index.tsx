@@ -39,8 +39,8 @@ const Experience = () => {
               ? EN.experience.title
               : ES.experience.title}
           </h2>
-          <div className="flex flex-row">
-            <div className="w-2/6 p-10">
+          <div className="flex flex-col md:flex-row">
+            <div className="w-2/6 py-2 md:p-10 ">
               <hr style={{ border: "none", borderTop: "5PX solid #eec048" }} />
             </div>
             <div className="">
@@ -93,7 +93,7 @@ const Experience = () => {
           {projectExperience.map((exp, i) => (
             <motion.div
               variants={fadeIn("right", "tween", (i + 1) * 0.2, 1)}
-              className={css.exp}
+              className="m-4 md:mt-8"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -101,7 +101,6 @@ const Experience = () => {
                 borderRadius: "20px",
                 padding: "1.5rem",
                 gap: "2rem",
-                marginTop: "2rem",
                 transition: "all 0.2s ease-out",
               }}
               whileHover={{
