@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import logo from "../../assets/img/HELPHIS_Trans.png";
 import { headerVariants } from "../../utils/motion";
 import { getMenuStyles } from "../../utils/motion";
-import Button from "../../components/Button";
-import { FiAlignRight, FiXCircle } from "react-icons/fi";
-import { BiPhoneCall } from "react-icons/bi";
+import { FiAlignRight } from "react-icons/fi";
 import logoD from "../../assets/img/HELPHIS_Trans_darkmode.png";
 // import
 import useHeaderShadow from "./../../hooks/useHeaderShadow";

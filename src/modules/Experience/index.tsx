@@ -1,10 +1,8 @@
-import React from "react";
 import css from "./Experience.module.scss";
 import "../../sass/constants.scss";
-import { WhatDoIHelp, projectExperience } from "../../utils/data";
+import { projectExperience } from "../../utils/data";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
-import { BsFillCheckCircleFill, BsFillPersonCheckFill } from "react-icons/bs";
 // context
 import useContextProvider from "../../hooks/useAppContext";
 // langs
@@ -34,7 +32,7 @@ const Experience = () => {
           variants={textVariant(0.5)}
           className={`${css.RightSide} flex flex-col gap-8`}
         >
-          <h2 className="primaryText text-[#286F6C] no-underline leading-[2.8rem] pt-2">
+          <h2 className="primaryText text-[#286F6C] no-underline leading-[2.8rem] pt-2 text-center">
             {language == "de"
               ? DE.experience.title
               : language == "en"
@@ -103,6 +101,7 @@ const Experience = () => {
                 borderRadius: "20px",
                 padding: "1.5rem",
                 gap: "2rem",
+                marginTop: "2rem",
                 transition: "all 0.2s ease-out",
               }}
               whileHover={{
