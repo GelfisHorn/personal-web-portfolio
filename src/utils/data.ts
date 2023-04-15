@@ -35,19 +35,19 @@ import project6 from "../assets/img/project3-santiago.png";
 
 export const projectExperience = [
   {
-    name: "Website Development",
+    name: "Web development",
     projects: 30,
     icon: HiOutlineDesktopComputer,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Development",
+    name: "Attractive Design",
     projects: 10,
     icon: CiMobile1,
     bg: "#EEC048",
   },
   {
-    name: "Administrative Websites",
+    name: "Web maintenance",
     projects: 12,
     icon: VscSymbolStructure,
     bg: "#F26440",
