@@ -1,6 +1,5 @@
 import css from "./Projects.module.scss";
 import {
-  portfolioExp,
   techHelphis,
   techEvo,
   techUptask,

@@ -1,9 +1,6 @@
 import css from "./Footer.module.scss";
-import { portfolioExp } from "../../utils/data";
-import { fadeIn, footerVariants, staggerChildren } from "../../utils/motion";
+import { footerVariants, staggerChildren } from "../../utils/motion";
 import { motion } from "framer-motion";
-import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
-import { SiGmail } from "react-icons/si";
 // Context
 import useContextProvider from "../../hooks/useAppContext";
 // Langs
@@ -71,26 +68,6 @@ const Footer = () => {
                     </div>
                     <div>Youtube</div>
                   </a>
-                  {/* <a
-                    className="flex items-center gap-2 hover:text-[#2B8C88] transition-colors"
-                    href={"https://instagram.com"}
-                    target="_blank"
-                  >
-                    <div className="grid place-content-center w-4">
-                      <i className="fa-brands fa-instagram"></i>
-                    </div>
-                    <div>Instagram</div>
-                  </a> */}
-                  {/* <a
-                    className="flex items-center gap-2 hover:text-[#2B8C88] transition-colors"
-                    href={"https://twitter.com/"}
-                    target="_blank"
-                  >
-                    <div className="grid place-content-center w-4">
-                      <i className="fa-brands fa-twitter"></i>
-                    </div>
-                    <div>Twitter</div>
-                  </a> */}
                 </div>
               </FooterColumn>
               <FooterColumn
@@ -112,15 +89,6 @@ const Footer = () => {
                       <span>helphis.tech@gmail.com</span>
                     </a>
                   </div>
-                  {/* <div className="text-[.92rem]">
-                    <a
-                      className="flex items-center gap-2 hover:text-[#2B8C88]"
-                      href="tel:+490101010101"
-                    >
-                      <i className="fa-regular fa-phone text-[#216B68] w-4"></i>
-                      <span>+49 0101 01 01 01</span>
-                    </a>
-                  </div> */}
                 </div>
               </FooterColumn>
             </div>

@@ -16,7 +16,6 @@ const AppContextProvider: FC = ({ children }: any) => {
   useEffect(() => {
     const lang = localStorage.getItem("lang") || "de";
     setLanguage(lang);
-    console.log(lang);
   }, []);
 
   // Change page theme
@@ -26,7 +25,6 @@ const AppContextProvider: FC = ({ children }: any) => {
 
   // Change page language
   function handleSetLanguage(lang: string) {
-    console.log(lang);
     setLanguage(lang);
     localStorage.setItem("lang", lang);
   }
