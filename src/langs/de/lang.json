@@ -1,7 +1,7 @@
 {
     "navbar": {
-        "im": "Mich",
-        "services": "Dienstleistungen",
+        "im": "Ich",
+        "services": "Über mich",
         "skills": "Fähigkeiten",
         "projects": "Projekte",
         "contactme": "Kontaktiere mich"
@@ -18,12 +18,12 @@
     },
     "experience": {
         "title": "Über mich",
-        "span1": "Ich bin ein <span>Full-Stack-Webentwickler</span>, der sich leidenschaftlich für Technologie und Softwareentwicklung begeistert. Ich liebe es, an herausfordernden Projekten zu arbeiten und innovative Lösungen für Probleme zu schaffen. Meine Erfahrung in der Webentwicklung hat mich zum <span>Experten</span> in der Erstellung von responsiven Websites mit einer großartigen Benutzererfahrung gemacht. Zusätzlich bin ich mit den beliebtesten Technologien sowie vielen anderen Webentwicklungstools sehr vertraut.",
-        "span2": "Im Laufe meiner Karriere als Webentwickler hatte ich die Möglichkeit, in verschiedenen Umgebungen und Projekten zu arbeiten, von kleinen statischen Seiten bis hin zu großen Webanwendungen, wobei ich in jedem von ihnen stets dasselbe <span>Engagement und dieselbe Hingabe</span> aufrechterhalte.",
-        "span3": "Meine Leidenschaft für die Webentwicklung treibt mich dazu an, auf dem neuesten Stand der Trends und Technologien auf dem Markt zu bleiben, was es mir ermöglicht, stets aktuelle und fortschrittliche Lösungen anzubieten. Wenn Sie auf der Suche nach einem engagierten und leidenschaftlichen Full-Stack-Webentwickler sind, zögern Sie nicht, mich zu kontaktieren! Ich freue mich darauf, mit Ihnen an Ihren nächsten Projekten zu arbeiten und gemeinsam <span>innovative und wirkungsvolle</span> Lösungen zu schaffen."
+        "span1": "Mein Name ist <span> Gelfis Horn </span>. Schon seit meiner Jugend interessiere ich mich für Softwareentwicklung, aber vor zwei Jahren habe ich mich entschieden, mich auf die Full-Stack-Webentwicklung zu spezialisieren und habe mir eigenständig Programmiersprachen und andere notwendige Technologien beigebracht.Derzeit genieße ich die <span>Frontend-Entwicklung</span> viel mehr und möchte mich in diesem Bereich weiter spezialisieren. Ich bin eine ehrliche und engagierte Person, bereit, mich anzustrengen, um die besten Ergebnisse zu erzielen. Mit meiner schnellen Lernfähigkeit glaube ich, dass ich in der Lage bin, jede Herausforderung zu meistern.",
+        "span2": "In den letzten Jahren habe ich Projekte durchgeführt, die von Landing Pages bis hin zu vollständigen <span>Full-Stack-Webplattformen</span> und Online-Shops reichen. Dank dieser Erfahrungen habe ich meine Kenntnisse in der Webentwicklung weiter vertieft. Obwohl ich bereits über eine solide Wissensbasis verfüge, bin ich mir bewusst, dass ich noch viel zu lernen habe, und das begeistert mich!. Ich würde gerne Teil eines Teams sein, das mir hilft, mich weiterzuentwickeln, und ich bin sicher, dass ich auch eine große Hilfe sein kann.",
+        "span3": "Ich spiele gerne Basketball, interessiere mich für Finanzmärkte und liebe es zu programmieren!"
     },
     "skills": {
-        "title": "Meine Fähigkeiten"
+        "title": "Fähigkeiten"
     },
     "projects": {
         "title": "Meine Projekte",

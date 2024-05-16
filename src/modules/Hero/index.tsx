@@ -42,7 +42,7 @@ const Hero = () => {
             className={`${css.certificate} flex flex-col gap-3 items-center pr-7`}
           >
             <img className="max-w-[5rem]" src={certificated} alt="certificated" />
-            <span>FULL STACK MERN</span>
+            <span>FULL STACK</span>
             <span>WEB DEVELOPER</span>
           </motion.div>
         </div>

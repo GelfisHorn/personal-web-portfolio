@@ -68,7 +68,7 @@ const Projects = () => {
             >
               <p>project develop</p>
               <a
-                href="https://helphistech.vercel.app"
+                href="https://test-helphistech.vercel.app/"
                 target="_blank"
                 className="cursor-pointer"
               >
